@@ -28,7 +28,7 @@ public class ListViewClicksActivity extends Activity {
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				String country = adapter.getItem(position);
 				SimpleAlertDialog.displayWithOK(ListViewClicksActivity.this, country);
-				Toast.makeText(ListViewClicksActivity.this, country, Toast.LENGTH_SHORT).show();
+				Toast.makeText(ListViewClicksActivity.this, country + 1, Toast.LENGTH_SHORT).show();
 			}
 			
 		});
